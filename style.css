@@ -1,0 +1,699 @@
+    * {
+        margin: 0;
+        padding: 0%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .container {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("/images/front-page/front-page-header.jpg");
+        background-size: cover;
+        margin-top: 0px 0px;
+    }
+    
+    .nav {
+        margin-top: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    
+    .nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 10px;
+    }
+    
+    .nav ul li a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    .nav ul li a:hover {
+        color: bisque;
+    }
+    
+    .center-div {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: 10%;
+    }
+    
+    .center-div h1 {
+        color: white;
+        font-size: 70px;
+        font-weight: bold;
+    }
+    
+    h1 span {
+        color: bisque;
+    }
+    
+    .center-div p {
+        color: white;
+        text-align: center;
+        margin: 15px 20px;
+    }
+    
+    .buttons {
+        display: flex;
+        margin: 15px 20px;
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn1,
+    .btn2 {
+        color: white;
+        margin-right: 22px;
+        padding: 22px;
+        display: block;
+        text-align: center;
+        background: transparent;
+        width: 40%;
+        color: white;
+        border: 2px solid white;
+        box-shadow: rgba(0, 0, 0, 0.7);
+        font-size: large;
+    }
+    
+    .btn1:hover {
+        background: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+    }
+    
+    .btn2 {
+        background-color: orange;
+    }
+    
+    .btn2:hover {
+        background-color: #6a4d8a;
+        cursor: pointer;
+    }
+    /* second-section */
+    
+    .second-section {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0%;
+    }
+    
+    .about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10%;
+        width: 70vw;
+    }
+    
+    .second-section h1 {
+        margin-bottom: 3%;
+    }
+    
+    .skills {
+        width: 100%;
+        max-width: 600px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .skill-bar1,
+    .skill-bar2,
+    .skill-bar3 {
+        height: 4px;
+        width: 300px;
+        background-color: black;
+        border-radius: 3px;
+        margin: 0px 20px
+    }
+    
+    .skill-perc1,
+    .skill-perc2,
+    .skill-perc3 {
+        height: 4px;
+        border-radius: 3px;
+        position: relative;
+    }
+    
+    .skill-perc1 {
+        background: salmon;
+        width: 60%;
+    }
+    
+    .skill-perc2 {
+        background: green;
+        width: 80%;
+    }
+    
+    .skill-perc3 {
+        background: purple;
+        width: 90%;
+    }
+    
+    .skill-perc1::before,
+    .skill-perc2::before,
+    .skill-perc3::before {
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        border-radius: 4px;
+        font-size: 12px;
+        top: -35px;
+        right: 0;
+        transform: translateX(50%);
+    }
+    
+    .skill-perc1::before {
+        background-color: salmon;
+        color: white;
+    }
+    
+    .skill-perc2::before {
+        background-color: green;
+        color: white;
+    }
+    
+    .skill-perc3::before {
+        background-color: purple;
+        color: white;
+    }
+    
+    .skill-name1,
+    .skill-name2,
+    .skill-name3 {
+        margin-top: 12px;
+        margin-left: 22px;
+    }
+    
+    .skill-name1 {
+        color: salmon;
+    }
+    
+    .skill-name2 {
+        color: green;
+    }
+    
+    .skill-name3 {
+        color: purple;
+    }
+    
+    .skill-name1 span {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    /* Third section */
+    
+    .third-section {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .heading {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 22px;
+        line-height: 2.2;
+    }
+    
+    .heading p {
+        color: gray;
+    }
+    
+    .projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        padding: 30px 0px;
+    }
+    
+    .projects div {
+        width: 270px;
+        margin: 0 10px;
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+        transition: 1s;
+    }
+    
+    .projects div img {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .projects div img:hover {
+        transform: scale(1.3);
+        z-index: 2;
+    }
+    /* four Page section */
+    
+    .four-section {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url("/images/front-page/testiomnials-background.jpg");
+    }
+    
+    .four-section h2 {
+        padding: 16px;
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+    
+    .slider {
+        max-width: 70%;
+        margin-top: 700px;
+        position: relative;
+        margin: auto;
+        height: 600px;
+    }
+    /* Картинка масштабируется по отношению к родительскому элементу */
+    
+    .slider .item img {
+        border-radius: 50%;
+    }
+    /* Кнопки вперед и назад */
+    
+    .slider .previous,
+    .slider .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+    
+    .slider .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    /* При наведении на кнопки добавляем фон кнопок */
+    
+    .slider .previous:hover,
+    .slider .next:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    /* Анимация слайдов */
+    
+    .slider .item,
+    .slider .item p,
+    .slider .item h1 {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        row-gap: 100px;
+    }
+    
+    .slider .item p {
+        height: 115px;
+        font-size: 30px;
+    }
+    
+    .slider .item h1 {
+        color: white;
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: 0.4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    /* fifth Page */
+    
+    .service-section {
+        width: 100vw;
+        height: 70vh;
+    }
+    
+    .service-section h1,
+    .service-section p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .service-section .content {
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        float: left;
+        margin: 0 10px;
+        text-align: center;
+        margin-top: 7%;
+        color: #9bb2c6;
+        row-gap: 20px;
+    }
+    /* six page */
+    
+    .six-section {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: #222f36;
+    }
+    
+    .six-section .heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    
+    .blogs {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .blog-btn {
+        padding: 10px 30px;
+        cursor: pointer;
+        background: #f1d204;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .blog-btn:hover {
+        background: #6a4d8a;
+    }
+    
+    .blogs .blog-box {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 0 40px;
+        column-gap: 9px;
+        row-gap: 22px;
+        background: white;
+    }
+    /* SEVEN PAGE */
+    
+    .seven-section {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .counter-box {
+        width: 100%;
+        height: 20%;
+        background-image: url("/images/front-page/front-page-counter.jpg");
+        display: flex;
+        align-items: center;
+    }
+    
+    .counter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 140px;
+    }
+    
+    .counter .num,
+    .counter h1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .difference {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 83px;
+    }
+    /* team box desing */
+    
+    .team-box {
+        width: 100%;
+        height: 80%;
+    }
+    
+    .team-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        row-gap: 10px;
+    }
+    
+    .team-info {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        gap: 2px;
+    }
+    
+    .team-info .details {
+        width: 25%;
+        height: 96%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        row-gap: 15px;
+    }
+    
+    .team-info h1 {
+        color: black;
+        font-size: 25px;
+    }
+    
+    .team-info p {
+        color: #b1aaa0;
+    }
+    
+    .team-image img {
+        border-radius: 50%;
+        border: 1px solid gray;
+    }
+    
+    .details h1 span {
+        color: #f2aabb;
+    }
+    
+    .icons1 i {
+        color: #f1d332;
+    }
+    
+    .icons2 i {
+        color: #f18b7d;
+    }
+    
+    .icons3 i {
+        color: #6a4d8a;
+    }
+    /* eight-section */
+    
+    .eight-section {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .eight-section .contact {
+        width: 80%;
+        height: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .contact-heading {
+        margin-left: 45%;
+        margin-bottom: 5%;
+    }
+    
+    .address-section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .address-section .add {
+        display: flex;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        font-size: 15px;
+    }
+    
+    .address-section .add h3 {
+        color: #f1d204;
+        font-size: 15px;
+    }
+    
+    .address-section .add p {
+        color: #d1dade;
+    }
+    
+    .address-section .add i {
+        cursor: pointer;
+        font-size: 20px;
+        color: #b1aaa0;
+    }
+    
+    .first-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        padding: 30px;
+    }
+    
+    .first-row .input-group {
+        flex-basis: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .input-group label {
+        gap: 10px;
+        color: #e2e2e2;
+    }
+    
+    .input-group input {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px;
+        border: 2px solid #e2e2e2;
+        border-radius: 4px;
+    }
+    
+    .input-message {
+        flex-basis: 45%;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 8px;
+        margin-left: 27px;
+    }
+    
+    .input-message input[type="text"] {
+        width: 200px;
+    }
+    
+    .input-message label {
+        color: #e2e2e2;
+    }
+    
+    .contact button {
+        float: right;
+        margin-right: 30%;
+        margin-top: 8px;
+        padding: 10px;
+        border: 2px solid #9bb2c6;
+        background: #f1d204;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border: 2px;
+        width: 20%;
+        cursor: pointer;
+    }
+    /* nine section */
+    
+    .nine-section {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #242320;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin: 0px auto;
+        height: 80%;
+    }
+    
+    footer .prod {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 150px 60px;
+    }
+    
+    .prod h1 {
+        color: white;
+    }
+    
+    .prod ul li {
+        color: #889192;
+        cursor: pointer;
+        row-gap: 8px;
+    }
+    
+    .prod ul li:hover {
+        color: #6a4d8a;
+    }
+    
+    .copy-write {
+        background: #242320;
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 62px;
+        border: 2px solid #222f36;
+    }
+    
+    .copy-write p {
+        color: white;
+    }
