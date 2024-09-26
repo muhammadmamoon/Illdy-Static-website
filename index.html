@@ -7,23 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>illdy website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/cde8f44fcf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <!-- First Page -->
-    <div class="container">
+      <!-- First Page -->
+      <div class="container">
         <div class="nav">
             <img src="./images/header-logo.png" alt="Logo" class="logo">
-            <ul class="nav-links">
-                <li><a href="">About</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Our Team</a></li>
-                <li><a href="">Contact Us</a></li>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
         <div class="center-div">
@@ -31,8 +38,8 @@
             <p>Illdy is a great one-page theme, perfect for developers and designers but also for anyone who wants a new
                 website for their business. Try it now!</p>
             <div class="buttons">
-                <button class="btn1">Learn More</button>
-                <button class="btn2">Download</button>
+                <button class="btn btn1">Learn More</button>
+                <button class="btn btn2">Download</button>
             </div>
         </div>
     </div>
@@ -41,11 +48,10 @@
     <div class="second-section">
         <h1>About</h1>
         <div class="about">
-            <p>It is an amazng one-page theme with great features that offers an incredible experience. It is easy to
-                install, make changes, adapt for your business. A modern design with clean lines and styling for a wide
-                variety of content, exactly how
-                a business design should be. You can add as many images as you want to the main header area and turn
-                them into slider.</p>
+            <p>It is an amazing one-page theme with great features that offers an incredible experience. It is easy to
+                install, make changes, and adapt for your business. A modern design with clean lines and styling for a wide
+                variety of content, exactly how a business design should be. You can add as many images as you want to the main header area and turn
+                them into a slider.</p>
         </div>
         <div class="skills">
             <div class="skill">
@@ -68,6 +74,7 @@
             </div>
         </div>
     </div>
+    
 
     <!-- Third Page -->
     <div class="third-section">
@@ -76,20 +83,21 @@
             <p>You'll love our work. Check it out!</p>
         </div>
         <div class="projects">
-            <div>
-                <img src="./images/front-page/front-page-project-1.jpg" alt="">
+            <div class="project-item">
+                <img src="./images/front-page/front-page-project-1.jpg" alt="Project 1">
             </div>
-            <div>
-                <img src="./images/front-page/front-page-project-2.jpg" alt="">
+            <div class="project-item">
+                <img src="./images/front-page/front-page-project-2.jpg" alt="Project 2">
             </div>
-            <div>
-                <img src="./images/front-page/front-page-project-3.jpg" alt="">
+            <div class="project-item">
+                <img src="./images/front-page/front-page-project-3.jpg" alt="Project 3">
             </div>
-            <div>
-                <img src="./images/front-page/front-page-project-4.jpg" alt="">
+            <div class="project-item">
+                <img src="./images/front-page/front-page-project-4.jpg" alt="Project 4">
             </div>
         </div>
     </div>
+    
 
     <!-- Four page -->
     <div class="four-section">
@@ -175,22 +183,25 @@
 
     <!-- seven page -->
     <div class="seven-section">
-        <div class="counter-box">
-            <div class="counter">
-                <span class="num" data-value="260">00</span>
-                <h1>PROJECTS</h1>
-            </div>
-            <span class="difference">|</span>
-            <div class="counter">
-                <span class="num" data-value="120">00</span>
-                <h1>CLIENTS</h1>
-            </div>
-            <span class="difference">|</span>
-            <div class="counter">
-                <span class="num" data-value="200">00</span>
-                <h1>COFFES</h1>
+        <div class="seven-section">
+            <div class="counter-box">
+                <div class="counter">
+                    <span class="num" data-value="260">00</span>
+                    <h1>PROJECTS</h1>
+                </div>
+                <span class="difference">|</span>
+                <div class="counter">
+                    <span class="num" data-value="120">00</span>
+                    <h1>CLIENTS</h1>
+                </div>
+                <span class="difference">|</span>
+                <div class="counter">
+                    <span class="num" data-value="200">00</span>
+                    <h1>COFFEES</h1>
+                </div>
             </div>
         </div>
+        
 
         <div class="team-box">
             <div class="team-content">
